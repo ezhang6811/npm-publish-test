@@ -26,13 +26,13 @@ console.log(add(2, 3)); // Output: 5
 
 Returns a greeting message.
 
-- `name` (string, optional): The name to greet. Default: 'World'
-- Returns: (string) A greeting message
+- **name** (string, optional): The name to greet. Defaults to 'World'.
+- **Returns**: (string) A greeting message
 
 ### `add(a, b)`
 
 Adds two numbers together.
 
-- `a` (number): First number
-- `b` (number): Second number
-- Returns: (number) Sum of a and b
+- **a** (number): The first number to add
+- **b** (number): The second number to add
+- **Returns**: (number) Sum of a and b
