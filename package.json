@@ -3,10 +3,7 @@
   "version": "1.0.1",
   "description": "test publishing to npm with OIDC auth",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ezhang6811/npm-publish-test.git"
-  },
+  "repository": "ezhang6811/npm-publish-test",
   "scripts": {
     "test": "node index.js"
   },
