@@ -2,18 +2,28 @@ name: Test NPM Publish
 on:
   workflow_dispatch:
 
+permissions:
+    id-token: write
+    contents: read
+
 jobs:
   publish:
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write
-      contents: read
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '22'
           registry-url: 'https://registry.npmjs.org'
+      
+      - name: Check npm version
+        run: npm --version
+      
+      - name: Upgrade npm
+        run: npm install -g npm@latest
+      
+      - name: Check npm version after upgrade
+        run: npm --version
       
       - name: Test publish
         env:
