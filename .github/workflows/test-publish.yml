@@ -15,10 +15,7 @@ jobs:
           node-version: '18'
           registry-url: 'https://registry.npmjs.org'
       
-      - name: Debug npm whoami
-        run: npm whoami || echo "Not authenticated"
-      
       - name: Test publish
         env:
           NPM_CONFIG_PROVENANCE: true
-        run: npm publish --dry-run
+        run: npm publish
