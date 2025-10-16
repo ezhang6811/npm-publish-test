@@ -1,0 +1,16 @@
+{
+  "name": "npm-publish-test",
+  "version": "1.0.0",
+  "description": "test publishing to npm with OIDC auth",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "test",
+    "npm",
+    "publish"
+  ],
+  "author": "",
+  "license": "ISC"
+}
