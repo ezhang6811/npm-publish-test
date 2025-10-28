@@ -1,6 +1,6 @@
 {
   "name": "@ezhang6811/npm-publish-test",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "test publishing to npm with OIDC auth",
   "main": "index.js",
   "repository": "ezhang6811/npm-publish-test",

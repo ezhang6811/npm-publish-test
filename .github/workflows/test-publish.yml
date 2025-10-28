@@ -28,4 +28,4 @@ jobs:
       - name: Test publish
         env:
           NPM_CONFIG_PROVENANCE: true
-        run: npm publish
+        run: npm publish --dry-run
