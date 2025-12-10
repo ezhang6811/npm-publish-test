@@ -7,8 +7,14 @@ permissions:
     contents: read
 
 jobs:
-  publish:
+  dummy:
     environment: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dummy step
+        run: echo "This job uses the Release environment"
+
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
